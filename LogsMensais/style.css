@@ -91,32 +91,12 @@ body {
     font-weight: bold;
 }
 
-.logs {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.acess{
-    cursor: pointer;
-}
-
-.logs .full {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
-    background: #1E63D5;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 .logsCard{
     background-color: #FFFFFF;
     width: 97%;
     height: 95%;
     border-radius: 10px;
+    overflow-y: auto;
 }
 
 .logsHeader{
@@ -135,5 +115,65 @@ body {
 
 #LogsTitle{
     margin-left: 60px;
+    color: #0F172A;
+}
+
+.logsDados {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+#LogsRegistros {
+    width: 90%;
+}
+
+.mesTitulo {
+    margin: 20px 0 5px 5px;
+    color: #64748B;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.logLinha {
+    background: #E5E7EB;
+    border-radius: 12px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+.logInfo {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.total {
+    font-weight: bold;
+    color: #334155;
+}
+
+.ideal {
+    color: #22C55E;
+    font-size: 14px;
+}
+
+.fora {
+    color: #EF4444;
+    font-size: 14px;
+}
+
+.botao {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
     color: #0F172A;
 }
