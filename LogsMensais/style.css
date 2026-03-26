@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 body {
     margin: 0;
     height: 100vh;
@@ -6,6 +8,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-family: 'Space Grotesk';
 }
 
 .container {
@@ -39,6 +43,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-top: -20px;
 }
 
 .logo {
@@ -92,6 +97,10 @@ body {
     gap: 5px;
 }
 
+.acess{
+    cursor: pointer;
+}
+
 .logs .full {
     width: 100%;
     padding: 12px;
@@ -100,6 +109,7 @@ body {
     background: #1E63D5;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .logsCard{
@@ -125,4 +135,5 @@ body {
 
 #LogsTitle{
     margin-left: 60px;
+    color: #0F172A;
 }
