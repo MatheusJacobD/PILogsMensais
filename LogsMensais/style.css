@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #0056B2, #68829f);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.header {
+    display: flex;
+}
+
+.back {
+    width: 20px;
+}
+
+.logoArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 25px;
+}
+
+.logotipo {
+    width: 140px;
+}
+
+.sloganArea {
+    display: flex;
+    justify-content: center;
+}
+
+.slogan {
+    width: 200px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputGroup {
+    display: flex;
+    gap: 10px;
+}
+
+.inputGroup input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #E2E8F0;
+}
+
+.inputGroup button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #1E63D5;
+    color: white;
+    font-weight: bold;
+}
+
+.logs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.logs .full {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #1E63D5;
+    color: white;
+    font-weight: bold;
+}
