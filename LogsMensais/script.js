@@ -55,18 +55,42 @@ let registros = document.getElementById("LogsRegistros");
 
 for (let i = 0; i < dados.length; i++) {
     let mes = dados[i];
+    let mesNome = mes.mes;
 
     registros.innerHTML += `
         <div class="mesTitulo">${mes.mes}</div>
 
-        <div class="logLinha">
+        <div class="logLinha" id="div${mesNome}">
             <div class="logInfo">
                 <span class="total">${mes.total} registros</span>
                 <span class="ideal">${mes.ideal} registros ideais</span>
                 <span class="fora">${mes.fora} fora da média</span>
             </div>
 
-            <div class="botao">+</div>
+            <div class="botaoExpandirDiv">
+                <button class="botaoExpandir" id="${mesNome}" onclick="expandir('${mesNome}', 'div${mesNome}')">+</button>
+            </div>
+        </div>
+    `;
+}
+
+let expand = document.getElementById("LogsExpandDiv");
+
+function expandir(mes, div){
+    let expandButton = document.getElementById(mes);
+    let divMes = document.getElementById(div);
+
+    // alert(`mes: ${expandButton.id}`);
+
+    if (expandButton.textContent == "+"){
+        expandButton.innerHTML = "-";
+    } else {
+        expandButton.innerHTML = "+";
+    }
+
+    divMes.innerHTML += `
+        <div class="expandDiv">
+            <div class="expandLine"></div>
         </div>
     `;
 }
